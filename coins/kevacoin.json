@@ -1,0 +1,7 @@
+{
+    "name": "Kevacoin",
+    "symbol": "KVA",
+    "algorithm": "cryptonight",
+    "peerMagic": "6ac6079a",
+    "peerMagicTestnet": "fdd2c8f1"
+}
