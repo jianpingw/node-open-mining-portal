@@ -1,23 +1,22 @@
 {
-    "enabled": false,
-    "coin": "litecoin.json",
+    "enabled": true,
+    "coin": "kevacoin.json",
 
-    "address": "n4jSe18kZMCdGcZqaYprShXW6EH1wivUK1",
+    "address": "VMpwrs7oqLbASU3tbKehhGyvDZ4u3mwR4y",
 
     "rewardRecipients": {
-        "n37vuNFkXfk15uFnGoVyHZ6PYQxppD3QqK": 1.5,
-        "22851477d63a085dbc2398c8430af1c09e7343f6": 0.1
+      "VW2GXU76VrDDwX7wsgqGzdRfifdD1HHVvg": 1.0
     },
 
     "paymentProcessing": {
         "enabled": true,
         "paymentInterval": 20,
-        "minimumPayment": 70,
+        "minimumPayment": 2,
         "daemon": {
             "host": "127.0.0.1",
             "port": 19332,
-            "user": "testuser",
-            "password": "testpass"
+            "user": "justwonder",
+            "password": "asdf1234"
         }
     },
 
@@ -26,9 +25,9 @@
             "diff": 8
         },
         "3032": {
-            "diff": 32,
-            "varDiff": {
-                "minDiff": 8,
+            "diff": 2,
+	    "varDiff": {
+                "minDiff": 2,
                 "maxDiff": 512,
                 "targetTime": 15,
                 "retargetTime": 90,
@@ -36,7 +35,14 @@
             }
         },
         "3256": {
-            "diff": 256
+            "diff": 256,
+	    "varDiff": {
+                "minDiff": 1,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
         }
     },
 
@@ -44,13 +50,13 @@
         {
             "host": "127.0.0.1",
             "port": 19332,
-            "user": "testuser",
-            "password": "testpass"
+            "user": "justwonder",
+            "password": "asdf1234"
         }
     ],
 
     "p2p": {
-        "enabled": true,
+        "enabled": false,
         "host": "127.0.0.1",
         "port": 19333,
         "disableTransactions": true
@@ -62,7 +68,7 @@
         "port": 3306,
         "user": "me",
         "password": "mypass",
-        "database": "ltc",
+        "database": "kva",
         "checkPassword": true,
         "autoCreateWorker": false
     }
